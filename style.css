@@ -291,7 +291,7 @@ nav .fa-bars:hover{
     .about-container{
         position: relative;
         display: grid;
-        width: clamp(200px, 53vh, 600px);
+        width: clamp(200px, 44vh, 500px);
     }
     .about-container .flex-1{
         margin-top: 2rem;
@@ -319,6 +319,12 @@ nav .fa-bars:hover{
     .flex-2 p{
         width: 290px;
     }
+    .flex-2 h1{
+        font-size: 2.4rem;
+    }
+    .flex-2 p{
+        width: 260px;
+    }
 }
 @media (max-width: 375px) {
     html{
@@ -327,7 +333,7 @@ nav .fa-bars:hover{
     .about-container{
         display: flex;
         flex-direction: column;
-        width: clamp(220px, 43vh, 400px);
+        width: clamp(220px, 48vh, 400px);
     }
     .about-container .flex-1{
         height: 200px;
