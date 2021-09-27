@@ -212,6 +212,20 @@ nav .fa-bars:hover{
     text-decoration: none;
     color: white;
 }
+.social{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.social i{
+    margin: 0 0.7rem;
+    color: black;
+}
+.social i:nth-child(1){
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 50%;
+}
 
 @media (min-width: 768px) and (max-width: 1162px) {
     html{
@@ -333,7 +347,7 @@ nav .fa-bars:hover{
     .about-container{
         display: flex;
         flex-direction: column;
-        width: clamp(270px, 41vh, 420px);
+        width: clamp(270px, 39vh, 420px);
     }
     .about-container .flex-1{
         height: 200px;
