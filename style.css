@@ -342,7 +342,7 @@ nav .fa-bars:hover{
 }
 @media (max-width:425px) {
     .about-container{
-        width: clamp(200px, 45vh, 500px);
+        width: clamp(180px, 42vh, 500px);
     }
 }
 @media (max-width: 376px) {
