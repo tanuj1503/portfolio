@@ -352,7 +352,7 @@ nav .fa-bars:hover{
     .about-container{
         display: flex;
         flex-direction: column;
-        width: clamp(270px, 39vh, 420px);
+        width: clamp(270px, 35vh, 420px);
     }
     .about-container .flex-1{
         height: 200px;
