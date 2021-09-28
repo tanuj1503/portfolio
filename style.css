@@ -305,7 +305,7 @@ nav .fa-bars:hover{
     .about-container{
         position: relative;
         display: grid;
-        width: clamp(200px, 44vh, 500px);
+        width: clamp(300px, 64vh, 500px);
     }
     .about-container .flex-1{
         margin-top: 2rem;
@@ -338,6 +338,11 @@ nav .fa-bars:hover{
     }
     .flex-2 p{
         width: 260px;
+    }
+}
+@media (max-width:500px) {
+    .about-container{
+        width: clamp(180px, 50vh, 500px);
     }
 }
 @media (max-width: 376px) {
