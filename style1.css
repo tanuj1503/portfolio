@@ -1,0 +1,132 @@
+.fade1{
+    position: absolute;
+    top: 4%;
+    width: 100vw;
+    height: 100vh;
+    /* background-image: url("./images/Rectangle\ 19.jpg"); */
+    background: linear-gradient(359.93deg, #082941 4.5%, rgba(2, 38, 58, 0) 84.71%);
+    /* background-color: black; */
+}
+.conatiner2{
+    position: relative;
+    background-color: rgba(8, 41, 65);
+    width: 100vw;
+    height: 100vh;
+    padding: 1.3rem;
+}
+.about-container2{
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80vw;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: space-evenly;
+    overflow-y: hidden;
+}
+.about-me{
+    position: relative;
+    width: 570px;
+    height: 50vh;
+    margin: 1rem;
+}
+
+
+/* change this shit*/
+.about-me .about-text{
+    position: absolute;
+    top: 2.5rem;
+    left: 4rem;
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: var(--colorYellow);
+    padding: 0.8rem 2rem;
+    border-radius: 24px;
+}
+.about-me .info-text{
+    position: absolute;
+    top: 6.8rem;
+    margin-left: 4.4rem;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.about-me .resume-button{
+    position: absolute;
+    bottom: 1.4rem;
+    margin-left: 4rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0.6rem 1.4rem;
+    border-radius: 12px;
+}
+.about-me .resume-button a{
+    color: white;
+    text-decoration: none;
+}
+.about-container2 img{
+    margin-top: 2rem;
+    width: 350px;
+    height: 350px;
+}
+@media (max-width: 768px){
+    .fade1{
+        top: 10%;
+    }
+    .about-container2{
+        flex-direction: column;
+        width: clamp(330px, 58vh, 550px);
+        height: 100vh;
+        left: 50%;
+        transform: translateX(-54%);
+        overflow: hidden;
+    }
+    .info-text{
+        margin-top: 1.6rem;
+        width: clamp(200px, 43vh, 300px);
+        font-size: 1.1rem;
+    }
+    .resume-button{
+        margin-top: 4rem;
+    }
+    .about-container2 img{
+        width: 250px;
+        height: 250px;
+        margin-left: 5rem;
+        margin-top: -2rem;
+    }
+}
+@media (max-width: 425px){
+    .about-container2{
+        left: 50%;
+        transform: translateX(-55%);
+        width: clamp(290px, 42vh, 500px);
+        height: 95vh;
+    }
+    .about-text{
+        margin-top: 1rem;
+        margin-left: -3rem;
+    }
+    .info-text{
+        margin-top: 1.4rem;
+        width: 230px;
+        left: -2.7rem;
+        font-size: 1rem;
+    }
+    .resume-button{
+        left: -2.5rem;
+    }
+    .about-container2 img{
+        margin-bottom: 1rem;
+        margin-left: 4rem;
+        width: 200px;
+        height: 200px;
+    }
+}
+@media (max-width: 376px){
+    .fade1{
+        background: linear-gradient(359.93deg, #082941 24.5%, rgba(2, 38, 58, 0) 84.71%);
+    }
+}
