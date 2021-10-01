@@ -2,7 +2,7 @@
 
 :root{
     --colorBlue : #060E2C;
-    --colorYellow : #ddcb25;
+    --colorYellow : #f7e22c;
 }
 html{
     font-size: 1rem;
@@ -20,12 +20,13 @@ body{
 .container-1{
     position: relative;
     width: 100vw;
-    height: 100vh;
-    background-image: url('./images/background.png');
-    background-position: center;
-    background-size: cover;
+    height: 118vh;
+    background-image: url('./images/Group\ 4.jpg');
+    background-position: top;
+    background-size :cover;
     box-sizing: border-box;
     overflow:hidden;
+    margin-top: -2rem;
 }
 
 .bubbles img{
@@ -81,6 +82,7 @@ body{
 }
 nav{
     position: relative;
+    margin-top: 2rem;
 }
 nav .logo{
     position: absolute;
@@ -135,7 +137,7 @@ nav .fa-bars:hover{
 }
 .about-container{
     position: absolute;
-    top: 13%;
+    top: 19%;
     left: 50%;
     transform: translateX(-50%);
     width: 80vw;
@@ -311,6 +313,7 @@ nav .fa-bars:hover{
         height: 120vh;
     }
     .about-container{
+        margin-top: -6rem;
         position: relative;
         display: grid;
         width: clamp(300px, 55vh, 500px);
@@ -353,8 +356,19 @@ nav .fa-bars:hover{
     }
 }
 @media (max-width:425px) {
+    .container-1{
+        height: 100vh;
+    }
     .about-container{
         width: clamp(180px, 42vh, 500px);
+        height:70vh;
+        margin-top: -5rem;
+    }
+    .about-container img{
+        height: 250px;
+    }
+    .flex-2{
+        top: -3rem;
     }
 }
 @media (max-width: 376px) {
@@ -362,7 +376,7 @@ nav .fa-bars:hover{
         font-size: 70%;
     }
     .container-1{
-        height: 103vh;
+        height: 100vh;
     }
     .about-container{
         display: flex;
@@ -374,8 +388,11 @@ nav .fa-bars:hover{
     }
     .about-container .flex-1 img{
         width: 250px;
-        height: 240px;
+        height: 200px;
         object-position: top;
+    }
+    .flex-2{
+        top: 1.5rem;
     }
     .flex-2 h3{
         font-size: 1.5rem;
