@@ -14,11 +14,10 @@ body{
 }
 .container{
     position: relative;
-    margin-top: -1.3rem;
 }
 .container-1{
-    position: absolute;
-    top: 0;
+    position: relative;
+    margin-top: -1.2rem;
     background-image: url('./images/Group\ 4.jpg');
     background-size: cover;
     background-position: top;
@@ -29,7 +28,7 @@ nav{
     position: relative;
     display: flex;
     justify-content: space-evenly;
-    margin-top: 1.5rem;
+    padding-top: 1.5rem;
 }
 nav h1{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -72,7 +71,7 @@ nav .fa-bars:hover{
 }
 .about-container{
     position: relative;
-    margin-top: 3rem;
+    margin-top: 2rem;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -140,6 +139,59 @@ nav .fa-bars:hover{
     border: none;
     outline: none;
 }
+.bubbles img{
+    position: relative;
+    width: clamp(5px, 6vh, 120px);
+    animation: bubble 7s linear infinite;
+}
+.bubbles{
+    position: absolute;
+    bottom: -7%;
+    width: 90vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0.5;
+}
+@keyframes bubble {
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+}
+.bubbles img:nth-child(1){
+    animation-delay: 2s;
+}
+.bubbles img:nth-child(2){
+    animation-delay: 1s;
+}
+.bubbles img:nth-child(3){
+    animation-delay: 3s;
+}
+.bubbles img:nth-child(4){
+    animation-delay: 4.5s;
+}
+.bubbles img:nth-child(5){
+    animation-delay: 3s;
+}
+.bubbles img:nth-child(6){
+    animation-delay: 6s;
+}
+.bubbles img:nth-child(7){
+    animation-delay: 7s;
+}
+
+
 
 @media (max-width: 768px) {
     ul li{
