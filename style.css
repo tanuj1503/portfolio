@@ -51,6 +51,10 @@ nav ul li a{
     text-decoration: none;
     color: white;
 }
+nav ul .resume a{
+    color: var(--colorYellow);
+    font-weight: 600;
+}
 nav .fa-bars{
     background-color: rgba(138, 138, 138, 0.1);
     position: absolute;
@@ -79,6 +83,7 @@ nav .fa-bars:hover{
     border-radius: 24px;
     padding: 2rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    backdrop-filter: blur(10px);
 }
 .about-container img{
     width: 250px;
@@ -189,9 +194,74 @@ nav .fa-bars:hover{
     animation-delay: 7s;
 }
 
-
-
+@media (max-width: 1024px) {
+    nav h1{
+        font-size: 1.3rem;
+    }
+    nav ul li{
+        font-size: 0.8rem;
+    }
+    .about-container{
+        padding: 1rem;
+        width: 680px;
+        justify-content: space-around;
+    }
+    .about-container img{
+        width: 180px;
+        height: 260px;
+    }
+    .flex-2 .info{
+        margin-left: 1rem;
+    }
+    .flex-2 .info h3{
+        font-size: 1.2rem;
+    }
+    .flex-2 .info h1{
+        font-size: 1.6rem;
+    }
+    .flex-2 .info p{
+        font-size: 0.8rem;
+    }
+    .flex-2 .info button{
+        font-size: 0.7rem;
+    }
+    .social i{
+        font-size: 0.8rem;
+    }
+}
 @media (max-width: 768px) {
+    /* nav ul{
+        display: none;
+    } */
+    .about-container{
+        padding: 1rem;
+        width: 500px;
+        justify-content: space-around;
+    }
+    .about-container img{
+        width: 170px;
+        height: 260px;
+    }
+    .flex-2 .info{
+        margin-left: 1rem;
+    }
+    .flex-2 .info h3{
+        font-size: 1.2rem;
+    }
+    .flex-2 .info h1{
+        font-size: 1.6rem;
+    }
+    .flex-2 .info p{
+        font-size: 0.8rem;
+    }
+    .flex-2 .info button{
+        font-size: 0.7rem;
+    }
+    .social i{
+        font-size: 0.8rem;
+    }
+}
+@media (max-width: 600px) {
     nav ul{
         display: none;
         position: absolute;
@@ -199,18 +269,21 @@ nav .fa-bars:hover{
         right: 5rem;
         flex-direction: column;
         background-color: rgba(138, 138, 138, 0.1);
-        width: 150px;
-        height: 300px;
         border-radius: 24px;
         backdrop-filter: blur(10px);
         z-index: 4;
+        padding: 2rem;
+    }
+    nav ul li{
+        margin: 1rem;
     }
     .about-container{
         display: grid;
+        width: 345px;
     }
     .about-container img{
        margin: auto;
-       height: 300px;
+       height: 230px;
     }
     nav h1{
         margin-left: clamp(-20rem, 30vh, -25rem);
@@ -234,10 +307,13 @@ nav .fa-bars:hover{
     nav .fa-bars{
         display: block;
     }
+    nav ul.active{
+        display: block;
+    }
 }
 @media (max-width:530px) {
     .about-container{
-        width: 280px;
+        width: 310px;
     }
     nav h1{
         margin-left: -12rem;
@@ -263,7 +339,7 @@ nav .fa-bars:hover{
 @media (max-width:400px) {
     .about-container{
         /* width: clamp(55vw, 30vh, 60vw); */
-        width: 220px;
+        width: 250px;
         margin-top: 2rem;
     }
     .about-container img{
