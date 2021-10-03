@@ -1,13 +1,14 @@
 
 .conatiner2{
     position: relative;
-    background-color: rgba(6, 41, 68);
+    /* background-color: rgba(6, 41, 68); */
     width: 100vw;
     display: flex;
     justify-content: center;
 }
 .about-container2{
     margin-top: 2rem;
+    margin-bottom: 2rem;
     width: clamp(56vw, 18vh, 80vw);
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 24px;
@@ -57,7 +58,7 @@
         margin: auto;
     }
     .about-me .info-text{
-        line-height: 1.6rem;
+        line-height: 1.3rem;
         font-size: 0.8rem;
         letter-spacing: 1px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -67,12 +68,15 @@
     .about-container2{
         width: 500px;
     }
+    .about-text{
+        font-size: 0.9rem;
+    }
     .about-container2 .info-text{
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
     .about-container2 img{
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
         margin: auto;
     }
 }
@@ -101,7 +105,7 @@
         font-size: 0.8rem;
     }
     .about-container2 img{
-        width: 240px;
-        height: 240px;
+        width: 200px;
+        height: 200px;
     }
 }

@@ -15,15 +15,17 @@ body{
 }
 .container{
     position: relative;
+    background-image: url('./images/Group\ 4.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
 }
 .container-1{
     position: relative;
-    margin-top: -1.2rem;
-    background-color: rgba(6, 41, 68);
-    background-size: cover;
-    background-position: top;
-    width: 100vw;
-    padding-bottom: 2rem;
+    margin-top: -1.4rem;
+    width: 80vw;
+    left: 50%;
+    transform: translateX(-50%);
 }
 nav{
     display: flex;
@@ -56,10 +58,10 @@ nav ul .resume a{
     font-weight: 600;
 }
 nav .fa-bars{
-    background-color: rgba(138, 138, 138, 0.1);
+    background-color: rgba(255, 241, 241, 0.4);
     position: absolute;
     top: 2.5rem;
-    right: 5rem;
+    right: 4rem;
     font-size: 1.1rem;
     padding: 0.5rem;
     border-radius: 11px;
@@ -273,6 +275,7 @@ nav .fa-bars:hover{
         backdrop-filter: blur(10px);
         z-index: 4;
         padding: 2rem;
+        border: 2px solid white;
     }
     nav ul li{
         margin: 1rem;
@@ -315,6 +318,9 @@ nav .fa-bars:hover{
     .about-container{
         width: 310px;
     }
+    nav ul{
+        right: 2rem;
+    }
     nav h1{
         margin-left: -12rem;
     }
@@ -345,6 +351,9 @@ nav .fa-bars:hover{
     .about-container img{
         height: 200px;
     }
+     nav ul{
+         right: 1rem;
+     }
      nav h1{
          margin-left: -7rem;
      }
