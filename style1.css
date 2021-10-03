@@ -60,8 +60,10 @@
         margin: auto;
     }
     .about-me .info-text{
-        line-height: 1.3rem;
-        font-size: 0.9rem;
+        line-height: 1.6rem;
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 }
 @media (max-width: 768px) {
