@@ -59,6 +59,10 @@
         height: 250px;
         margin: auto;
     }
+    .about-me .info-text{
+        line-height: 1.3rem;
+        font-size: 0.9rem;
+    }
 }
 @media (max-width: 768px) {
     .about-container2{
