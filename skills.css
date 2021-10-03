@@ -1,0 +1,77 @@
+.container-3{
+    position: relative;
+}
+.skills{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 2rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 54vw;
+    border-radius: 24px;
+    padding: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    backdrop-filter: blur(10px);
+}
+.skills h2{
+    margin: 0;
+    color: white;
+    background-color: var(--colorYellow);
+    width: 80px;
+    padding: 0.6rem 3rem;
+    border-radius: 34px;
+}
+.lang{
+    margin: 2rem auto;
+    width: 70%;
+    /* background-color: red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.lang-width{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 2rem;
+}
+@media (max-width: 1024px) {
+    .skills{
+        width: 640px;
+    }
+    .lang{
+        width: 350px;
+    }
+    .lang-width{
+        width: 50px;
+        height: 50px;
+    }
+}
+@media (max-width: 768px){
+    .skills{
+        width: 470px;
+    }
+}
+@media (max-width: 600px) {
+    .skills{
+        width: 320px;
+    }
+    .lang{
+        width: 230px;
+    }
+    .skills h2{
+        font-size: 1.1rem;
+    }
+}
+@media (max-width: 530px){
+    .skills{
+        width: 280px;
+    }
+}
+@media (max-width: 400px)
+{
+    .skills{
+        width: 220px;
+    }
+}
