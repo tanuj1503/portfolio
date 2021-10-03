@@ -18,9 +18,6 @@
     overflow: hidden;
     z-index: 1;
 }
-.about-me{
-    width: 600px;
-}
 .about-text{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
@@ -32,7 +29,7 @@
 .info-text{
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width: clamp(420px, 60vh, 450px);
+    /* width: clamp(420px, 60vh, 450px); */
 }
 .resume-button{
     background-color: rgba(226, 221, 221, 0.2);
@@ -50,59 +47,31 @@
     height: 300px;
 }
 
-@media (max-width: 768px) {
+@media (max-width:768px) {
     .about-container2{
         display: grid;
     }
     .about-container2 img{
         margin: auto;
     }
-    .about-container2 .about-me{
-       position: relative;
-       margin-left: 18%;
-       font-size: clamp(0.8rem, 1.6vh, 1.4rem);
-    }
-    .about-container2 .info-text{
-       width: 390px;
-       font-size: 1rem;
-    }
-    .about-container2 img{
-        width: 270px;
-        height: 270px;
-        margin-top: 2rem;
-    }
-}
-@media (max-width: 653px) {
-    .about-container2 .about-me{
-        margin-left: 23%;
-    }
-    .about-container2 .info-text{
-        width: 310px;
-        font-size: 0.7rem;
-     }
 }
 @media (max-width: 530px) {
     .about-container2{
-        width: 300px;
-    }
-    .about-container2 .about-me{
-        margin-left: 25%;
-    }
-    .about-container2 img{
-        width: 180px;
-        height: 180px;
-        margin-top: 2rem;
+        width: 315px;
     }
 }
 @media (max-width: 400px) {
     .about-container2{
-        width: 260px;
+        width: 250px;
     }
-    .about-container2 .about-me{
-        margin-left: 29%;
+    .about-text{
+        font-size: 0.9rem;
     }
-    .about-container2 .info-text{
-        font-size: 0.7rem;
+    .info-text{
+        font-size: 0.8rem;
+    }
+    .about-container2 img{
         width: 240px;
+        height: 240px;
     }
 }
