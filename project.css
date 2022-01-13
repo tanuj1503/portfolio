@@ -1,0 +1,107 @@
+.container-4{
+    position: relative;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.project-container{
+    margin-top: 2rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 54vw;
+    border-radius: 24px;
+    padding: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+.project-name{
+    margin: 0;
+    color: white;
+    background-image: linear-gradient(360deg, rgba(4, 74, 102, 0.1), rgba(135, 206, 235, 0.1));
+    box-shadow: 0.3px 0.3px 2px rgba(255, 255, 255,1);
+    width: 140px;
+    padding: 0.6rem;
+    border-radius: 34px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.owl-carousel{
+    position: relative;
+    margin-top: 2rem;
+    margin-left: -0.5rem;
+}
+.item{
+    position: relative;
+    background-color: grey;
+    padding: 0.8rem 0.8rem 0.1rem 0.8rem;
+    margin-left: 1rem;
+    border-radius: 6px;
+    text-overflow: clip;
+    line-height: 0.8rem;
+}
+.item img{
+    border-radius: 6px;
+}
+.item h5{
+    text-align: left;
+    background-color: rgba(255, 255, 255,0.4);
+    padding: 0.8rem 0.6rem; 
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 2;
+}
+.language ul{
+    line-height: 1.4rem;
+}
+.language ul li{
+    text-align: left;
+}
+.language{
+    display: none;
+}
+.item:hover .language{
+    background-color: rgba(255, 255, 255,0.4);
+    padding: 0.4rem;
+    border-radius: 4px;
+    display: block;
+    margin-top: -1rem;
+    margin-bottom: 1.3rem;
+}
+.code{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: rgba(255, 255, 255,0.4);
+    margin-top: -1rem;
+    margin-bottom: 0.4rem;
+    padding: 0.3rem;
+    border-radius: 6px;
+}
+.code p{
+    text-align: left;
+    margin: 0.3rem;
+}
+.code p a{
+    font-size: 0.75rem;
+}
+
+@media (max-width: 400px) {
+    .project-container{
+        width: 220px;
+    }
+}
+@media (min-width:401px) and ( max-width: 530px) {
+    .project-container{
+        width: 270px;
+    }
+}
+@media (min-width:600px) and ( max-width: 768px) {
+    .project-container{
+        width: 460px;
+    }
+}
+@media (min-width:769px) and ( max-width: 1024px) {
+    .project-container{
+        width: 610px;
+    }
+}

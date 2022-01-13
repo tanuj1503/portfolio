@@ -8,6 +8,11 @@
     <title>PORTFOLIO</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
 </head>
 
 <body>
@@ -32,7 +37,7 @@
                         <h1><span>I'M</span> TANUJ BISWAS</h1>
                         <P>Frontend web developer focused on creating clean
                             and user-friendly experiences. Believes in teamwork.</P>
-                        <button><a href="">CONATCT</a></button>
+                        <button><a href="">CONTACT</a></button>
                     </div>
                     <div class="social">
                         <a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
@@ -52,6 +57,7 @@
                 <img src="./images/bubble.png">
             </div>
         </div>
+
         <div class="conatiner2">
             <div class="about-container2">
                 <div class="about-me">
@@ -68,18 +74,135 @@
         </div>
 
         <div class="container-3">
-            <div class="skills">
-                <h2>SKILLS</h2>
-                <div class="lang">
-                    <img class="lang-width" src="./images/html5.jpg" alt="">
-                    <img class="lang-width" src="./images/css3.jpg" alt="">
-                    <img class="lang-width" src="./images/JavaScript-logo.png" alt="">
-                    <img class="lang-width" src="./images/reactjs.jpg" alt="">
-                    <img class="lang-width" src="./images/angular.jpg" alt="">
-                    <img class="lang-width" src="./images/python.png" alt="">
+            <div class="skills" onmouseover="Circle('.round')">
+                <h3>SKILLS</h3>
+                    <div class="row">
+                        <div class="col">
+                            <div class="round" data-value="0.75" data-size="80" data-thickness="9">
+                                <strong>
+                                </strong>
+                            </div>
+                            <p class="skill-name">HTML5</p>
+                        </div>
+
+                        <div class="col">
+                            <div class="round" data-value="0.85" data-size="80" data-thickness="9">
+                                <strong>
+                                </strong>
+                            </div>
+                            <p class="skill-name">CSS3</p>
+                        </div>
+
+                        <div class="col">
+                            <div class="round" data-value="0.65" data-size="80" data-thickness="9">
+                                <strong>
+                                </strong>
+                            </div>
+                            <p class="skill-name">JavaScript</p>
+                        </div>
+
+                        <div class="col">
+                            <div class="round" data-value="0.55" data-size="80" data-thickness="9">
+                                <strong>
+                                </strong>
+                            </div>
+                            <p class="skill-name">ReactJs</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <div class="container-4">
+            <div class="project-container">
+                <h3 class="project-name">Project</h3>
+                <div class="owl-carousel owl-theme">
+                    <div class="item" style="width:180px">
+                        <img src="./images/music.jpg" alt="">
+                        <h3 style="text-align: left;">Music Player</h3>
+                        <h5>Language used</h5>
+                        <div class="language">
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+                        </div>
+                        <div class="code">
+                            <p>Github : <a href="https://tanuj1503.github.io/music-player/">https://tanuj1503.github.io/music-player/</a></p>
+                        </div>
+                    </div>
+
+                    <div class="item" style="width:180px">
+                        <img src="./images/banking.jpg" alt="">
+                        <h3 style="text-align: left;">Banking System</h3>
+                        <h5>Language used</h5>
+                        <div class="language">
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>PHP</li>
+                                <li>Mysql</li>
+                            </ul>
+                        </div>
+                        <div class="code">
+                            <p>Github : <a href="https://tanuj1503.github.io/music-player/">https://tanuj1503.github.io/music-player/</a></p>
+                        </div>
+                    </div>
+
+                    <div class="item" style="width:180px">
+                        <img src="./images/folded.png" alt="">
+                        <h3 style="text-align: left;">Folded Card</h3>
+                        <h5>Language used</h5>
+                        <div class="language">
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+                        </div>
+                        <div class="code">
+                            <p>Github : <a href="https://tanuj1503.github.io/folded/">https://tanuj1503.github.io/folded/</a></p>
+                        </div>
+                    </div>
+
+                    <div class="item" style="width:180px">
+                        <img src="./images/banking.jpg" alt="">
+                    </div>
                 </div>
             </div>
         </div>
+
     </div>
     <script src="./main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.0/circle-progress.js" integrity="sha512-PuB7Mj8Cg1CK83v7/ioAXLcE2/DENp1fIE5zP9zVoET6dNOcO05hSmQGCeqQivU6Kx7oJAOdSDvkrBGZK8zLmQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            autoWidth:true,
+            lazyLoad:true,
+            loop:true,
+            margin:10,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:true
+                },
+                600:{
+                    items:3,
+                    nav:false
+                },
+                1000:{
+                    items:3,
+                    nav:true,
+                    loop:false
+                }
+            }
+        })
+    </script>
+
 </body>
+</html>

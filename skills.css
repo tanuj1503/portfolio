@@ -1,10 +1,10 @@
 .container-3{
     position: relative;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
 }
 .skills{
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
     margin-top: 2rem;
     background-color: rgba(255, 255, 255, 0.2);
     width: 54vw;
@@ -13,29 +13,56 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     backdrop-filter: blur(10px);
 }
-.skills h2{
+.skills h3{
     margin: 0;
     color: white;
-    background-color: var(--colorYellow);
-    width: 80px;
-    padding: 0.6rem 3rem;
+    background-image: linear-gradient(360deg, rgba(4, 74, 102, 0.1), rgba(135, 206, 235, 0.1));
+    box-shadow: 0.3px 0.3px 2px rgba(255, 255, 255,1);
+    width: 140px;
+    padding: 0.6rem;
     border-radius: 34px;
+    text-align: center;
+    letter-spacing: 1px;
 }
-.lang{
-    margin: 2rem auto;
-    width: 70%;
-    /* background-color: red; */
+.row{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
-.lang-width{
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 12px;
-    margin: 2rem;
+.round{
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+    /* margin-bottom: 20px; */
 }
+strong{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.skill-name{
+    text-align: center;
+    letter-spacing:1px;
+}
+.skills:hover .skill-name{
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+      
+}
+
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #bfe971, 0 0 2px #f5bfda, 0 0 2px #eec6da, 0 0 1px #fcb1d7, 0 0 1px #f8a1cd;
+    }
+    to {
+      text-shadow: 0 0 1px #fff, 0 0 1px #ac9bf8, 0 0 1px #fcaed5, 0 0 1px #4dc7ff, 0 0 1px #8688f8, 0 0 1px #a19cf0, 0 0 1px #8abdf7;
+    }
+  }
+
 @media (max-width: 1024px) {
     .skills{
         width: 640px;
