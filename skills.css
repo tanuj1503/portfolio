@@ -15,25 +15,27 @@
 }
 .skills h3{
     margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     background-image: linear-gradient(360deg, rgba(4, 74, 102, 0.1), rgba(135, 206, 235, 0.1));
     box-shadow: 0.3px 0.3px 2px rgba(255, 255, 255,1);
-    width: 140px;
-    padding: 0.6rem;
-    border-radius: 34px;
+    width: 100px;
+    padding: 0.6rem 1.4rem;
+    border-radius: 4px;
     text-align: center;
-    letter-spacing: 1px;
 }
 .row{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
+}
+.col{
+    text-align: center;
 }
 .round{
     position: relative;
-    width: 100%;
     margin-top: 30px;
-    /* margin-bottom: 20px; */
 }
 strong{
     position: absolute;
@@ -44,6 +46,38 @@ strong{
 .skill-name{
     text-align: center;
     letter-spacing:1px;
+    padding: 8px 15px;
+    position: relative;
+    border: 0.2px solid rgb(96, 200, 248);
+    font-size: 1rem;
+}
+.skill-name::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+    width: 10%;
+    height: 20%;
+    border-top: 1.6px solid rgb(96, 200, 248);
+    border-left: 1.6px solid rgb(96, 200, 248);
+}
+.skill-name:hover:before,
+.skill-name:hover:after
+{
+    width: 105%;
+    height: 105%;
+}
+.skill-name::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: 0.3s;
+    width: 10%;
+    height: 20%;
+    border-bottom: 1.6px solid rgb(96, 200, 248);
+    border-right: 1.6px solid rgb(96, 200, 248);
 }
 .skills:hover .skill-name{
     color: #fff;

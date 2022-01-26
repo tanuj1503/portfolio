@@ -17,15 +17,15 @@
 
 <body>
     <div class="container">
-        <div class="container-1">
+        <div class="container-1" id=landing-page>
             <nav>
                 <h1 class="logo">PORTFOLIO</h1>
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Projects</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li class="resume"><a href="">RESUME</a></li>
+                    <li><a href="#landing-page">Home</a></li>
+                    <li><a href="#about-me">About</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#footer">Contact</a></li>
+                    <li class="resume"><a href="resume.html">RESUME</a></li>
                 </ul>
                 <i class="fa fa-bars" aria-hidden="true"></i>
             </nav>
@@ -37,7 +37,7 @@
                         <h1><span>I'M</span> TANUJ BISWAS</h1>
                         <P>Frontend web developer focused on creating clean
                             and user-friendly experiences. Believes in teamwork.</P>
-                        <button><a href="">CONTACT</a></button>
+                        <button><a href="">Contact</a></button>
                     </div>
                     <div class="social">
                         <a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
@@ -47,7 +47,7 @@
                 </div>
             </div>
 
-            <div class="bubbles">
+            <!-- <div class="bubbles">
                 <img src="./images/bubble.png">
                 <img src="./images/bubble.png">
                 <img src="./images/bubble.png">
@@ -55,11 +55,11 @@
                 <img src="./images/bubble.png">
                 <img src="./images/bubble.png">
                 <img src="./images/bubble.png">
-            </div>
+            </div> -->
         </div>
 
         <div class="conatiner2">
-            <div class="about-container2">
+            <div class="about-container2" id="about-me">
                 <div class="about-me">
                     <h3 class="about-text">ABOUT ME</h3>
                     <p class="info-text">I am tanuj biswas from ballrpur, Maharshtra. I am an I.T student pursuing
@@ -74,11 +74,11 @@
         </div>
 
         <div class="container-3">
-            <div class="skills" onmouseover="Circle('.round')">
+            <div class="skills" onmouseover="Circle('.round')" id="skills">
                 <h3>SKILLS</h3>
                     <div class="row">
                         <div class="col">
-                            <div class="round" data-value="0.75" data-size="80" data-thickness="9">
+                            <div class="round" data-value="0.75" data-size="70" data-thickness="6">
                                 <strong>
                                 </strong>
                             </div>
@@ -86,7 +86,7 @@
                         </div>
 
                         <div class="col">
-                            <div class="round" data-value="0.85" data-size="80" data-thickness="9">
+                            <div class="round" data-value="0.85" data-size="70" data-thickness="6">
                                 <strong>
                                 </strong>
                             </div>
@@ -94,7 +94,7 @@
                         </div>
 
                         <div class="col">
-                            <div class="round" data-value="0.65" data-size="80" data-thickness="9">
+                            <div class="round" data-value="0.65" data-size="70" data-thickness="6">
                                 <strong>
                                 </strong>
                             </div>
@@ -102,7 +102,7 @@
                         </div>
 
                         <div class="col">
-                            <div class="round" data-value="0.55" data-size="80" data-thickness="9">
+                            <div class="round" data-value="0.55" data-size="70" data-thickness="6">
                                 <strong>
                                 </strong>
                             </div>
@@ -112,7 +112,7 @@
             </div>
         </div>
 
-        <div class="container-4">
+        <div class="container-4" id="project">
             <div class="project-container">
                 <h3 class="project-name">Project</h3>
                 <div class="owl-carousel owl-theme">
@@ -171,6 +171,59 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="container-5">
+            <div class="footer-container" id="form">
+                <div class="footimg">
+                    <img src="./images/Man thinking-amico.png" alt="">
+                </div>
+                <div class="footform">
+                    <form action="">
+                        <h1>Let's Connect</h1>
+                        <div class="input-container">
+                            <input type="text" placeholder="Enter your name">
+                            <input type="text" placeholder="Email id">
+                            <input type="text" placeholder="Contact">
+                            <button class="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container-6">
+            <div class="footer" id="footer">
+                <div class="footer-info">
+                    <div class="port">
+                        <h1 class="port-one">TANUJ</h1>
+                        <h3 class="port-two">BISWAS</h3>
+                    </div>
+                    <div class="contact">
+                        <p>I'm happy to hear from you !</p>
+                        <p class="phone"><i class="fa fa-phone" aria-hidden="true"></i> +91 9322933798</p>
+                        <p class="email"><i class="fa fa-envelope" aria-hidden="true"></i> tanujbis20@gmail.com</p>
+                    </div>
+                    <div class="address">
+                        <div class="address-info">
+                            <p>Address :</p>
+                            <p>Pandit dindayal ward,</p>
+                            <p>Ballarpur, 442901.</p>
+                        </div>
+                        <a href="https://goo.gl/maps/yyBPWvRkQBnoh1Cz7">Google map <i class="fa fa-globe" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <p class="copyright"><i class="fa fa-copyright" aria-hidden="true"></i> tanuj.t.biswas</p>
+            </div>
+        </div>
+
+        <div class="bubbles">
+            <img src="./images/bubble.png">
+            <img src="./images/bubble.png">
+            <img src="./images/bubble.png">
+            <img src="./images/bubble.png">
+            <img src="./images/bubble.png">
+            <img src="./images/bubble.png">
+            <img src="./images/bubble.png">
         </div>
 
     </div>

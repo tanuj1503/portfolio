@@ -1,0 +1,177 @@
+.container-5{
+    position: relative;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.footer-container{
+    margin-top: 2rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 54vw;
+    border-radius: 24px;
+    padding: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.footimg{
+    background-color: white;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px 0px 0px 8px;
+}
+.footimg img{
+    width: 200px;
+    height: 200x;
+}
+.footform{
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 50%;
+    position: relative;
+    border-radius: 0 8px 8px 0;
+}
+form h1{
+    margin-top: -0.4rem;
+}
+.input-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input-container input{
+    width: 250px;
+    border: none;
+    outline: none;
+    margin: 0.4rem 0;
+    padding: 0.8rem 1rem;
+}
+.input-container input:nth-child(3){
+    height: 60px;
+}
+ .input-container .submit{
+    border: none;
+    outline: none;
+    padding: 0.4rem 1.5rem;
+    background-color: rgb(25, 169, 236);
+    position: relative;
+    margin-top: 0.8rem;
+    margin-left: -11rem;
+    color: white;
+    cursor: pointer;
+}
+.input-container .submit::before{
+    content: "";
+    position: absolute;
+    transition: 0.3s;
+    top: -0.4rem;
+    left: -0.4rem;
+    width: 105%;
+    height: 105%;
+    border-top: 2px solid rgb(6, 138, 199);
+    border-left: 2px solid rgb(6, 138, 199);
+}
+.input-container .submit::after{
+    content: "";
+    position: absolute;
+    transition: 0.3s;
+    bottom: -0.4rem;
+    right: -0.4rem;
+    width: 105%;
+    height: 105%;
+    border-bottom: 2px solid rgb(6, 138, 199);
+    border-right: 2px solid rgb(6, 138, 199);
+}
+.input-container .submit:hover::before{
+    width: 15%;
+    height: 35%;
+    border-top: 3px solid rgb(25, 169, 236);
+    border-left: 3px solid rgb(25, 169, 236);
+}
+.input-container .submit:hover:after{
+    width: 15%;
+    height: 35%;
+    border-bottom: 3px solid rgb(25, 169, 236);
+    border-right: 3px solid rgb(25, 169, 236);
+}
+.map a{
+    position: absolute;
+    right: 5.2rem;
+    bottom: 1.9rem;
+    color: white;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0.2rem 1rem;
+    cursor: pointer;
+}
+.map a i{
+    position: relative;
+    font-size: 1.3rem;
+    text-align: center;
+    border: 2px solid yellow;
+    border-radius: 50%;
+    padding: 0.1rem 0.2rem;
+}
+
+@media (max-width: 1024px) {
+    .footer-container{
+        width: 600px;
+    }
+}
+@media (max-width : 768px) {
+    .footer-container{
+        width: 460px;
+    }
+    .input-container input{
+        width: 160px;
+        padding: 0.6rem;
+    }
+    form h1{
+        font-size: 1.6rem;
+    }
+    .input-container .submit{
+        margin: 1rem auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-container{
+        width: 315px;
+        display: flex;
+        justify-content: center;
+    }
+    .footimg{
+        display: none;
+    }
+    .footform{
+        border-radius: 8px;
+        width: 80%;
+    }
+    .input-container input{
+        width: 220px;
+    }
+}
+@media (max-width: 530px){
+    .footer-container{
+        width: 270px;
+    }
+    .footform{
+        width: 70%;
+    }
+    .input-container input{
+        width: 180px;
+    }
+}
+@media (max-width: 400px){
+    .footer-container{
+        width: 220px;
+    }
+    .footform{
+        width: 85%;
+    }
+}

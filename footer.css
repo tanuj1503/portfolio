@@ -1,0 +1,110 @@
+.container-6{
+    position: relative;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    z-index: 8;
+}
+.footer{
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 90vw;
+    background-color: rgb(10, 10, 10);
+    padding-top: 1rem 2rem;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-family: sans-serif;
+    color: white;
+    display: grid;
+    place-items: center;
+}
+.footer-info{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.port{
+    width: 150px;
+    line-height: 1rem;
+    text-align: center;
+    margin: 0.5rem;
+}
+.port .port-one{
+    letter-spacing: 6px;
+}
+.port .port-two{
+    letter-spacing: 6px;
+    position: relative;
+}
+.port .port-two::before{
+    content: "";
+    position: absolute;
+    top: -0.5rem;
+    left: 0;
+    width: 100%;
+    border-top: 3px solid white;
+}
+.port .port-two::after{
+    content: "";
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    width: 100%;
+    border-bottom: 3px solid white;
+}
+
+.contact{
+    color: white;
+    margin: 0.5rem;
+}
+.contact p:nth-child(1){
+    font-size: 0.8rem;
+}
+.contact .phone{
+    border: 1px solid white;
+    text-align: center;
+    padding: 0.4rem 0.6rem;
+}
+.contact .email{
+    border: 1px solid white;
+    text-align: center;
+    padding: 0.4rem 0.6rem;
+}
+
+.address{
+    line-height: 2.4rem;
+    margin: 0.5rem;
+}
+.address-info{
+    line-height: 0.5rem;
+}
+.address .address-info p:nth-child(2),
+.address .address-info p:nth-child(3)
+{
+    font-size: 0.9rem;
+}
+.address a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 0.4rem 1.5rem;
+    margin-top: 2rem;
+}
+.copyright{
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 665px) {
+    .address{
+      
+    }
+}
+@media (max-width: 400px) {
+    .footer{
+        width: 300px;
+    }
+}
